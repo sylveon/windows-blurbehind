@@ -1,0 +1,10 @@
+version: 'Build #{build}'
+platform:
+  - x86
+  - x64
+install:
+  - ps: Install-Product node 8 $env:platform
+test_script:
+  - npm install
+build: off
+deploy: off

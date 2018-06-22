@@ -1,0 +1,44 @@
+{
+  "name": "windows-blurbehind",
+  "version": "1.0.0",
+  "description": "JavaScript bindings for DwmEnableBlurBehindWindow",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylveon/windows-blurbehind.git"
+  },
+  "keywords": [
+    "bindings",
+    "native",
+    "transparency",
+    "blur"
+  ],
+  "author": {
+    "name": "Charles Milette",
+    "email": "charles.milette@gmail.com",
+    "url": "https://charlesmilette.net/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sylveon/windows-blurbehind/issues"
+  },
+  "homepage": "https://github.com/sylveon/windows-blurbehind",
+  "devDependencies": {
+    "node-gyp": "^3.6.2"
+  },
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build"
+  },
+  "os": [
+    "win32"
+  ],
+  "jshintConfig": {
+    "curly": true,
+    "eqeqeq": true,
+    "esversion": 6,
+    "node": true,
+    "strict": "global"
+  }
+}
