@@ -8,7 +8,7 @@ void blurbehind(const v8::FunctionCallbackInfo<v8::Value> &args)
 
 	const DWM_BLURBEHIND bb = {
 		DWM_BB_ENABLE,
-		args[1]->BooleanValue(),
+		args[1].As<v8::Boolean>()->Value(),
 		NULL,
 		FALSE
 	};
