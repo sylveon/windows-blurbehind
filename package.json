@@ -1,6 +1,6 @@
 {
   "name": "windows-blurbehind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript bindings for DwmEnableBlurBehindWindow",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
