@@ -1,9 +1,9 @@
 {
   "name": "windows-blurbehind",
-  "version": "1.0.1",
-  "description": "JavaScript bindings for DwmEnableBlurBehindWindow",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "version": "2.0.0",
+  "description": "JavaScript bindings for DwmEnableBlurBehindWindow and DwmExtendFrameIntoClientArea",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sylveon/windows-blurbehind.git"
@@ -12,33 +12,31 @@
     "bindings",
     "native",
     "transparency",
-    "blur"
+    "blur",
+    "aero"
   ],
   "author": {
     "name": "Charles Milette",
     "email": "charles.milette@gmail.com",
-    "url": "https://charlesmilette.net/"
+    "url": "https://sylveon.dev/"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sylveon/windows-blurbehind/issues"
   },
   "homepage": "https://github.com/sylveon/windows-blurbehind",
+  "dependencies": {
+    "@types/node": "^10.12.18"
+  },
   "devDependencies": {
-    "node-gyp": "^3.6.2"
+    "node-gyp": "^3.6.2",
+    "typescript": "^3.2.4"
   },
   "scripts": {
-    "configure": "node-gyp configure",
+    "prepare": "tsc",
     "build": "node-gyp build"
   },
   "os": [
     "win32"
-  ],
-  "jshintConfig": {
-    "curly": true,
-    "eqeqeq": true,
-    "esversion": 6,
-    "node": true,
-    "strict": "global"
-  }
+  ]
 }

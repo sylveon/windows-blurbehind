@@ -1,0 +1,6 @@
+build/
+lib/
+
+appveyor.yml
+ReadMe.md
+tsconfig.json
