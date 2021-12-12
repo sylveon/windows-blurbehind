@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/sylveon/windows-blurbehind",
   "dependencies": {
+    "node-addon-api": "4.2.0",
     "@types/node": "^10.12.18"
   },
   "devDependencies": {
